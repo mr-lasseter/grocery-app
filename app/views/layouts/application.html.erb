@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <%= stylesheet_link_tag "main" %>
+    <head>
+        <title>Your title here</title>
+    </head>
+    <body>
+
+
+        <div id="header" class="container_12">
+            <div id="header-content" class="grid_12 ">
+            </div>
+        </div>
+
+        <div id="content" class="container_12">
+            <div id="content-content" class="grid_12 ">
+                  <%= yield %>
+            </div>
+        </div>
+
+        <div id="footer" class="container_12">
+            <div id="footer-content" class="grid_12 ">
+            </div>
+        </div>
+    </body>
+</html>
