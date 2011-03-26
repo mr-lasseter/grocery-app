@@ -1,0 +1,95 @@
+@import url("component.css");
+
+body{
+    width: 100%;
+    min-width: 960px;
+    height: 100%;
+    margin: 0;
+    background: #F3F3F3;
+}
+
+/*-Header
+------------------------------------------------------*/
+header{
+    background: black;
+    padding: 15px 0;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+}
+
+header h1 a {
+    background: url("../images/grocery-app.png");
+    float:left;
+    height:30px;
+    overflow: hidden;
+    text-indent: -900px;
+    width:185px;
+    color: white;
+}
+
+header nav {
+    float: right;
+    display: block;
+    height: 30px;
+    margin-top: -10px;
+}
+
+header nav li {
+    float: left;
+}
+
+header nav a {
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 4px 10px;
+    margin: 0 0 0 5px;
+    float: left;
+    overflow: visible;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+}
+
+/*  Section
+----------------------------------------------*/
+section{
+    display: block;
+}
+
+/*  Banner
+----------------------------------------------*/
+#banner{
+    background: url("../images/purple-grid.gif");
+    height: 30px;
+}
+
+#banner .light{
+    background: url("../images/light.png") center top no-repeat;
+    height: 100%;
+}
+
+#banner .scissors{
+    background: url("../images/scissors.gif") 0 0 repeat-x;
+    height: 4px;
+    width: 100%;
+    margin-top: -4px;
+}
+
+/*  Content
+----------------------------------------------*/
+#content{
+ min-height: 560px;
+}
+
+/*  Footer
+----------------------------------------------*/
+footer{
+    background:#222;
+    color: white;
+    padding: 30px;
+}
+

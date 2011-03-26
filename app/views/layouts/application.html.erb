@@ -1,26 +1,51 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    <%= stylesheet_link_tag "main" %>
-    <head>
-        <title>Your title here</title>
-    </head>
-    <body>
+<link rel="icon" type="image/png" href="../../../public/images/groceryAppCart.png" />
+<%= stylesheet_link_tag "layout" %>
+<%= stylesheet_link_tag "960" %>
 
+<head>
+  <title>Grocery App</title>
+</head>
+<body>
+<header>
+  <div class="container_12 clearfix">
+    <div class="grid_12">
+      <h1>
+        <a href="/" title="Grocery-App">Grocery-App</a>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/join" title="Join Grocery App">Join</a>
+          </li>
+          <li>
+            <a href="/signin" title="Sign In">Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<section id="banner">
+  <div class="light"></div>
+  <div class="scissors top"></div>
+</section>
 
-        <div id="header" class="container_12">
-            <div id="header-content" class="grid_12 ">
-            </div>
-        </div>
+<section id="content" class="container_12 clearfix">
+  <div class="grid_12">
+    <%= yield %>
+  </div>
+</section>
 
-        <div id="content" class="container_12">
-            <div id="content-content" class="grid_12 ">
-                  <%= yield %>
-            </div>
-        </div>
-
-        <div id="footer" class="container_12">
-            <div id="footer-content" class="grid_12 ">
-            </div>
-        </div>
-    </body>
+<footer>
+  <div class="container_12 clearfix">
+    <div class="clearfix">
+      <div class="grid_2">
+        <strong>Some Kind of Footer Message Here</strong>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
 </html>
