@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<link rel="icon" type="image/png" href="../../../public/images/groceryAppCart.png" />
+<link rel="icon" type="image/png" href="../../../public/images/groceryAppCart.png"/>
 <%= stylesheet_link_tag "layout" %>
 <%= stylesheet_link_tag "960" %>
 
@@ -16,12 +16,13 @@
       </h1>
       <nav>
         <ul>
-          <li>
-            <a href="/join" title="Join Grocery App">Join</a>
-          </li>
-          <li>
-            <a href="/signin" title="Sign In">Sign In</a>
-          </li>
+          <% if current_user %>
+              <li><%= link_to "Edit Profile", edit_user_path(:current) %></li>
+              <li><%= link_to "Logout", logout_path %></li>
+          <% else %>
+              <li><%= link_to "Register", new_user_path %></li>
+              <li><%= link_to "Login", login_path %></li>
+          <% end %>
         </ul>
       </nav>
     </div>
